@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>AVA -  Estudiantes</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="d-flex flex-row justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-light bg-success bg-opacity-75 rounded-bottom-2 col-12 col-md-10">
+            <div class="container-fluid">
+                <a class="navbar-item me-2 ms-2 d-none d-md-block" href="#">
+                    <i class="fa-solid fa-house fa-2xl" style="color: #e2e2e2;"></i>
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Curso</a>
+                  </li>
+                  <li class="nav-item lg">
+                    <a class="nav-link text-white" href="#">Proyecto</a>
+                  </li>
+                  <li class="nav-item lg">
+                    <a class="nav-link text-white" href="#">Agenda</a>
+                  </li>
+                  <li class="nav-item lg">
+                    <a class="nav-link text-white" href="#">Mensajes</a>
+                  </li>
+                  <li class="nav-item lg">
+                    <a class="nav-link text-white" href="#">Foro</a>
+                  </li>
+                  <li class="nav-item lg">
+                    <a class="nav-link text-white" href="#">Notas</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  Buenas XXXX, XXXXX
+                </span>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!--Fin navbar-->
+
+    <!--Cuerpo para tarjetas-->
+    <div class="d-flex my-5 flex-wrap">
+        <!--Presentacion card-->
+        <div class="card col-10 mb-3 rounded-1 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-4 d-none d-sm-block">
+                <img src="img/no-picture.jpg" class="img-fluid rounded-1-start" alt="...">
+              </div>
+              <div class="col-12 col-sm-8 d-flex align-items-center">
+                <div class="card-body">
+                  <h4 class="card-title">Nombre del estudiante</h4>
+                  <h6 class="card-subtitle">Grupo al que pertenece</h6>
+                  <p class="card-text mb-0"> <small> ID / Código</small></p>
+                  <p class="card-text"><small class="text-muted">Rol</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fin presentacion card-->
+
+          <!--Tareas próximas-->
+          <div class="card col-10 mb-3 rounded-1 mx-auto" style="max-width: 700px;">
+            <div class="row g-0">
+
+              <!--Card header-->
+              <div class="card-header bg-white">
+                <i class="fa-solid fa-list-ul fa-lg"></i>
+                Tareas Próximas
+              </div>
+              <!--Fin card header-->
+
+              <!--Lista de tareas-->
+              <div class="d-flex align-items-center">
+                <div class="card-body px-0">
+                  <div class="overflow-auto">
+                    <!--Inicio tabla-->
+                    <table class="table table-borderless table-responsive">
+                      <tbody>
+
+                        <!--Fila-->
+                        <tr class="d-flex align-items-center border-bottom">
+                          <!--Checkbox-->
+                          <th class="col-1 ps-3">
+                            <div class="form-check" style="display: flex; align-items: center;">
+                              <input class="form-check-input"
+                              id="exampleCustomCheckbox12" type="checkbox"><label class="form-check-label"
+                              for="exampleCustomCheckbox12"></label>
+                            </div>
+                          </th>
+                          <!--Tarea-->
+                          <td class="col-7">
+                            <div>
+                              <p class="m-0">Hacer la maquetación </p>
+                              <p class="text-muted m-0 " style="font-size: small;">Asignada por: Nombre de estudiante</p>
+                            </div>
+                          </td>
+                        <!--Condición-->
+                          <td class="col-1">
+                            <div class="badge bg-danger">
+                              HOY
+                            </div>
+                          </td>
+                          <!--Controles-->
+                          <td class="col-3 d-flex justify-content-evenly">
+                              <button class="border-0 btn-transition btn btn-outline-success">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <button class="border-0 btn-transition btn btn-outline-danger">
+                                <i class="fa fa-trash"></i>  
+                              </button>
+                          </td>
+                        </tr>
+                        <!--Fin fila-->
+
+                        <!--Fila-->
+                        <tr class="d-flex align-items-center border-bottom">
+                          <!--Checkbox-->
+                          <th class="col-1 ps-3">
+                            <div class="form-check" style="display: flex; align-items: center;">
+                              <input class="form-check-input"
+                              id="exampleCustomCheckbox12" type="checkbox"><label class="form-check-label"
+                              for="exampleCustomCheckbox12"></label>
+                            </div>
+                          </th>
+                          <!--Tarea-->
+                          <td class="col-7">
+                            <div>
+                              <p class="m-0">Hacer la maquetación </p>
+                              <p class="text-muted m-0 " style="font-size: small;">Asignada por: Nombre de estudiante</p>
+                            </div>
+                          </td>
+                        <!--Condición-->
+                          <td class="col-1">
+                            
+                          </td>
+                          <!--Controles-->
+                          <td class="col-3 d-flex justify-content-evenly">
+                              <button class="border-0 btn-transition btn btn-outline-success">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <button class="border-0 btn-transition btn btn-outline-danger">
+                                <i class="fa fa-trash"></i>  
+                              </button>
+                          </td>
+                        </tr>
+                        <!--Fin fila-->
+
+                      </tbody>
+                    </table>
+                    <!--Fin tabla-->
+                  </div>
+                </div>
+              </div>
+              <!--Fin de lista de tareas-->
+              
+            </div>
+          </div>
+          <!--Fin tareas próximas-->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/adf64059ef.js" crossorigin="anonymous"></script>
+</body>
+</html>
